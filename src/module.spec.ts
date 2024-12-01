@@ -1,17 +1,10 @@
-import { obj } from './module';
-jest.mock('./module', () => {
-  return {
-    obj: {
-      method() {
-        return "method1";
-      },
-      props: "a"
-    }
-  }
-});
+jest.mock('./module'); import { obj } from './module';
 
 test('module', () => {
-  console.log(obj.method) // 존재함
-  expect(obj.method()).toBe("method1"); // obj.method()가 Expected: "method1" 하지만 실제로는 Received: undefined 뜸
-  expect(obj.props).toBe("a");
+  (obj.method as jest.Mock).mockImplementation((callback, num) => callback(num));
+  expect(obj.method((num) => num, 3)).toBe(3)
+})
+
+test("module2", () => {
+  expect(obj.method((num) => num, 3)).toBe(3)
 })

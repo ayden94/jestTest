@@ -1,6 +1,6 @@
 export const obj = {
-  method() {
-    return "method1";
+  method(callback: Function, num: number) {
+    return callback(num);
   },
   props: "a"
 }

@@ -10,4 +10,4 @@ logs/
 
 # # Jest
 coverage/
-# jest/
+jest/

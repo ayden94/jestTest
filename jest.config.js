@@ -1,8 +1,11 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} **/
 export default {
-  testEnvironment: "node",
-  preset: "ts-jest",
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
   transform: {
-    "^.+.tsx?$": ["ts-jest",{}],
+    '^.+\\.tsx?$': 'ts-jest',
   },
+  roots: ['<rootDir>/src'], // 테스트 파일이 위치한 디렉토리
 };
