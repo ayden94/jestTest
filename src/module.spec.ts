@@ -1,5 +1,14 @@
 import { obj } from './module';
-jest.mock('./module');
+jest.mock('./module', () => {
+  return {
+    obj: {
+      method() {
+        return "method1";
+      },
+      props: "a"
+    }
+  }
+});
 
 test('module', () => {
   console.log(obj.method) // 존재함

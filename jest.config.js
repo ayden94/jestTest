@@ -5,5 +5,4 @@ export default {
   transform: {
     "^.+.tsx?$": ["ts-jest",{}],
   },
-  setupFilesAfterEnv: ["./testSetup.js"]
 };
