@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1733054176575" clover="3.2.0">
-  <project timestamp="1733054176575" name="All files">
+<coverage generated="1733054445410" clover="3.2.0">
+  <project timestamp="1733054445411" name="All files">
     <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0" elements="3" coveredelements="1" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
-    <file name="module.ts" path="/Users/playground/Documents/jestTest/module.ts">
+    <file name="module.ts" path="/Users/playground/Documents/jestTest/src/module.ts">
       <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="0" type="stmt"/>
